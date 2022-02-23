@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PhraseView: View {
+    @State var CheckClicked = false
     let question: Question
     @State var selectedIndex: Int? = nil
     
@@ -26,25 +27,26 @@ struct PhraseView: View {
                     }
                     .background(colorForButton(at: index))
                     .cornerRadius(15)
+                    .disabled(CheckClicked == true)
                 }
                
             }
             
-            Button(action: {
-                  
-                }) {
-                    Text("Next")
-                        .frame(width: 320, height: 20, alignment: .center)
-                        .padding()
-                        .foregroundColor(.white)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 15)
-                                .stroke(Color("ButtonOutline"), lineWidth: 15)
-                    )
-                    //darker
-                        .background(Color("ButtonOutline"))
-                        .cornerRadius(15)
+            if CheckClicked == false {
+                FowardButton(text: "Check") {
+                    print("check")
+                    //what if they haven't selected anything?
+                    if let _ = selectedIndex {
+                        selectedIndex! += 0
+                        CheckClicked.toggle()
+                    }
                 }
+            } else {
+                FowardButton(text: "Next") {
+                    print("next")
+                    CheckClicked.toggle()
+                }
+            }
             
             
         }
@@ -56,12 +58,25 @@ struct PhraseView: View {
             .background(Color("BackgroundBlue"))
         }
     
-    func colorForButton(at index: Int) -> Color {
+    func colorForButton(at index: Int) -> Color? {
+        
+        if CheckClicked == true {
+            
+            if index == question.correctAnswerIndex {
+                return .green
+            }
+            
+            if index == selectedIndex {
+                return .red
+            }
+            
+        }
+        
         guard index == selectedIndex else {
             return .clear
         }
         
-        return .green
+        return .purple
 
     }
 }
@@ -77,7 +92,7 @@ struct AnswerButton: View {
                 Text(text)
                     .frame(width: 320, height: 50, alignment: .center)
                     .padding()
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("ButtonTextColor"))
                     .overlay(
                         RoundedRectangle(cornerRadius: 15)
                             .stroke(Color("ButtonOutline"), lineWidth: 15)
@@ -89,6 +104,6 @@ struct AnswerButton: View {
 struct PhraseView_Previews: PreviewProvider {
     static var previews: some View {
         PhraseView(question: Question.allQuestions[0])
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
     }
 }

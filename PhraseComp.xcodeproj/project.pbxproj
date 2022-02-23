@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E42A8E7F27C6C23C002620E7 /* FowardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A8E7E27C6C23C002620E7 /* FowardButton.swift */; };
+		E42A8E8527C6CF4A002620E7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A8E8427C6CF4A002620E7 /* SettingsView.swift */; };
 		E4D0EA9D27C688FD001850EF /* PhraseCompApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D0EA9C27C688FD001850EF /* PhraseCompApp.swift */; };
 		E4D0EA9F27C688FD001850EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D0EA9E27C688FD001850EF /* ContentView.swift */; };
 		E4D0EAA127C68902001850EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D0EAA027C68902001850EF /* Assets.xcassets */; };
@@ -16,13 +18,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E42A8E7E27C6C23C002620E7 /* FowardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FowardButton.swift; sourceTree = "<group>"; };
+		E42A8E8427C6CF4A002620E7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E4D0EA9927C688FD001850EF /* PhraseComp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhraseComp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D0EA9C27C688FD001850EF /* PhraseCompApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseCompApp.swift; sourceTree = "<group>"; };
 		E4D0EA9E27C688FD001850EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4D0EAA027C68902001850EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4D0EAA327C68902001850EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E4D0EAAA27C6891A001850EF /* PhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseView.swift; sourceTree = "<group>"; };
-		E4D0EAB827C6A91A001850EF /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Question.swift; path = ../Question.swift; sourceTree = "<group>"; };
+		E4D0EAB827C6A91A001850EF /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E42A8E7A27C6C19B002620E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4D0EAB827C6A91A001850EF /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E42A8E7D27C6C1D2002620E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4D0EA9E27C688FD001850EF /* ContentView.swift */,
+				E4D0EAAA27C6891A001850EF /* PhraseView.swift */,
+				E42A8E7E27C6C23C002620E7 /* FowardButton.swift */,
+				E42A8E8427C6CF4A002620E7 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E4D0EA9027C688FD001850EF = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +79,10 @@
 			isa = PBXGroup;
 			children = (
 				E4D0EA9C27C688FD001850EF /* PhraseCompApp.swift */,
-				E4D0EA9E27C688FD001850EF /* ContentView.swift */,
 				E4D0EAA027C68902001850EF /* Assets.xcassets */,
 				E4D0EAA227C68902001850EF /* Preview Content */,
-				E4D0EAAA27C6891A001850EF /* PhraseView.swift */,
-				E4D0EAB827C6A91A001850EF /* Question.swift */,
+				E42A8E7D27C6C1D2002620E7 /* Views */,
+				E42A8E7A27C6C19B002620E7 /* Models */,
 			);
 			path = PhraseComp;
 			sourceTree = "<group>";
@@ -146,7 +168,9 @@
 				E4D0EA9F27C688FD001850EF /* ContentView.swift in Sources */,
 				E4D0EAB927C6A91A001850EF /* Question.swift in Sources */,
 				E4D0EA9D27C688FD001850EF /* PhraseCompApp.swift in Sources */,
+				E42A8E8527C6CF4A002620E7 /* SettingsView.swift in Sources */,
 				E4D0EAAB27C6891A001850EF /* PhraseView.swift in Sources */,
+				E42A8E7F27C6C23C002620E7 /* FowardButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
