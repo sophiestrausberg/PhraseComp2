@@ -18,17 +18,22 @@ struct PhraseView: View {
                 
             VStack {
                 Button("answerText") {
-                    
-                    }.background(Image("Rectangle"))
-                    .background(Color.white).padding(.bottom, 50.0)
+                    print("Working")
+                }
+                .background(Image("Rectangle"))
+                .padding(.bottom, 50.0)
+                
                 Button("answerText") {
-                                    
-                    }.background(Image("Rectangle"))
-                    .background(Color.white).padding(.bottom, 50.0)
+                    print("Working")
+                }
+                .background(Image("Rectangle"))
+                .padding(.bottom, 50.0)
+                
                 Button("answerText") {
-                                    
-                    }.background(Image("Rectangle"))
-                    .background(Color.white).padding(.bottom, 50.0)
+                    print("Working")
+                }
+                .background(Image("Rectangle"))
+                .padding(.bottom, 50.0)
             }
             
             ProgressView(value: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/).padding(.horizontal, 100.0)
@@ -37,8 +42,9 @@ struct PhraseView: View {
         .padding(.vertical, 80.0)
         .frame(width: .infinity, height: .infinity)
             .edgesIgnoringSafeArea(.all)
-//            .background(Color("BackgroundBlue"))
-//            .foregroundColor(Color.white)
+        //DARK MODE
+            .background(Color("BackgroundBlue"))
+            .foregroundColor(Color.white)
         }
 }
 
