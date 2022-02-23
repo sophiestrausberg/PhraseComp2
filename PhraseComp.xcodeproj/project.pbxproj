@@ -12,6 +12,7 @@
 		E4D0EAA127C68902001850EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D0EAA027C68902001850EF /* Assets.xcassets */; };
 		E4D0EAA427C68902001850EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D0EAA327C68902001850EF /* Preview Assets.xcassets */; };
 		E4D0EAAB27C6891A001850EF /* PhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D0EAAA27C6891A001850EF /* PhraseView.swift */; };
+		E4D0EAB927C6A91A001850EF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D0EAB827C6A91A001850EF /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E4D0EAA027C68902001850EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4D0EAA327C68902001850EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E4D0EAAA27C6891A001850EF /* PhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseView.swift; sourceTree = "<group>"; };
+		E4D0EAB827C6A91A001850EF /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Question.swift; path = ../Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				E4D0EAA027C68902001850EF /* Assets.xcassets */,
 				E4D0EAA227C68902001850EF /* Preview Content */,
 				E4D0EAAA27C6891A001850EF /* PhraseView.swift */,
+				E4D0EAB827C6A91A001850EF /* Question.swift */,
 			);
 			path = PhraseComp;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D0EA9F27C688FD001850EF /* ContentView.swift in Sources */,
+				E4D0EAB927C6A91A001850EF /* Question.swift in Sources */,
 				E4D0EA9D27C688FD001850EF /* PhraseCompApp.swift in Sources */,
 				E4D0EAAB27C6891A001850EF /* PhraseView.swift in Sources */,
 			);
