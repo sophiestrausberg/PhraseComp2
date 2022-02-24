@@ -7,32 +7,40 @@
 
 import SwiftUI
 
-enum Flavor: String, CaseIterable, Identifiable {
-    case chocolate
-    case vanilla
-    case strawberry
-
-    var id: String { self.rawValue }
-}
-
 struct SettingsView: View {
-    @State private var selectedFlavor = Flavor.chocolate
+    @State var picturesOn = false
+    @State var isGoClicked = false
     var body: some View {
-        VStack {
-            Text("Settings").bold().multilineTextAlignment(.center).font(.system(size: 30))
-
-            Picker("Flavor", selection: $selectedFlavor) {
-                Text("Chocolate").tag(Flavor.chocolate)
-                Text("Vanilla").tag(Flavor.vanilla)
-                Text("Strawberry").tag(Flavor.strawberry)
-            }
-//            Text("Selected flavor: \(selectedFlavor.rawValue)")
-            
-            Spacer()
-            FowardButton(text: "Start") {
+        NavigationView {
+            VStack(spacing: 30) {
+                Text("Settings").bold().multilineTextAlignment(.center).font(.system(size: 30))
+                Spacer()
+                HStack {
+                    Text("Pictures").font(.system(size: 15))
+                    Toggle(isOn: $picturesOn) {
+                        
+                    }.labelsHidden()
+                    .tint(picturesOn ? Color("ButtonOutline") : .gray)
+                }
                 
-            }
+                DropDown()
+                
+                Spacer()
+                
+                FowardButton(text: "Let's Go!") {
+                    isGoClicked = true
+                    print(isGoClicked)
+                }
+                
+            }.padding(.vertical, 50)
+                .background(phraseNavigationLink)
+                .navigationBarHidden(true)
         }
+    }
+    private var phraseNavigationLink : some View {
+        NavigationLink(destination: PhraseView(), isActive: .constant(isGoClicked), label: {
+            EmptyView()
+        })
     }
 }
 

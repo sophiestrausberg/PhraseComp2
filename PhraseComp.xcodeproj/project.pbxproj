@@ -8,7 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E42A8E7F27C6C23C002620E7 /* FowardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A8E7E27C6C23C002620E7 /* FowardButton.swift */; };
-		E42A8E8527C6CF4A002620E7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A8E8427C6CF4A002620E7 /* SettingsView.swift */; };
+		E42A8E8527C6CF4A002620E7 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A8E8427C6CF4A002620E7 /* DropDown.swift */; };
+		E42A8E8727C6E8D7002620E7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A8E8627C6E8D7002620E7 /* SettingsView.swift */; };
+		E4A4AEB527C6F150004B4C92 /* FullExcersise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4AEB427C6F150004B4C92 /* FullExcersise.swift */; };
+		E4A4AEB927C6F41C004B4C92 /* PhraseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4AEB827C6F41C004B4C92 /* PhraseViewModel.swift */; };
+		E4A4AEBB27C70DBF004B4C92 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4AEBA27C70DBF004B4C92 /* ResultView.swift */; };
+		E4A4AEBD27C70F19004B4C92 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4AEBC27C70F19004B4C92 /* ResultsViewModel.swift */; };
 		E4D0EA9D27C688FD001850EF /* PhraseCompApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D0EA9C27C688FD001850EF /* PhraseCompApp.swift */; };
 		E4D0EA9F27C688FD001850EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D0EA9E27C688FD001850EF /* ContentView.swift */; };
 		E4D0EAA127C68902001850EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D0EAA027C68902001850EF /* Assets.xcassets */; };
@@ -19,7 +24,12 @@
 
 /* Begin PBXFileReference section */
 		E42A8E7E27C6C23C002620E7 /* FowardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FowardButton.swift; sourceTree = "<group>"; };
-		E42A8E8427C6CF4A002620E7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E42A8E8427C6CF4A002620E7 /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		E42A8E8627C6E8D7002620E7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E4A4AEB427C6F150004B4C92 /* FullExcersise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullExcersise.swift; sourceTree = "<group>"; };
+		E4A4AEB827C6F41C004B4C92 /* PhraseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseViewModel.swift; sourceTree = "<group>"; };
+		E4A4AEBA27C70DBF004B4C92 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		E4A4AEBC27C70F19004B4C92 /* ResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
 		E4D0EA9927C688FD001850EF /* PhraseComp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhraseComp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D0EA9C27C688FD001850EF /* PhraseCompApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseCompApp.swift; sourceTree = "<group>"; };
 		E4D0EA9E27C688FD001850EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				E4D0EAB827C6A91A001850EF /* Question.swift */,
+				E4A4AEB427C6F150004B4C92 /* FullExcersise.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -54,9 +65,20 @@
 				E4D0EA9E27C688FD001850EF /* ContentView.swift */,
 				E4D0EAAA27C6891A001850EF /* PhraseView.swift */,
 				E42A8E7E27C6C23C002620E7 /* FowardButton.swift */,
-				E42A8E8427C6CF4A002620E7 /* SettingsView.swift */,
+				E42A8E8427C6CF4A002620E7 /* DropDown.swift */,
+				E42A8E8627C6E8D7002620E7 /* SettingsView.swift */,
+				E4A4AEBA27C70DBF004B4C92 /* ResultView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E4A4AEB627C6F3C0004B4C92 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E4A4AEB827C6F41C004B4C92 /* PhraseViewModel.swift */,
+				E4A4AEBC27C70F19004B4C92 /* ResultsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E4D0EA9027C688FD001850EF = {
@@ -83,6 +105,7 @@
 				E4D0EAA227C68902001850EF /* Preview Content */,
 				E42A8E7D27C6C1D2002620E7 /* Views */,
 				E42A8E7A27C6C19B002620E7 /* Models */,
+				E4A4AEB627C6F3C0004B4C92 /* ViewModel */,
 			);
 			path = PhraseComp;
 			sourceTree = "<group>";
@@ -165,11 +188,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A4AEB927C6F41C004B4C92 /* PhraseViewModel.swift in Sources */,
+				E42A8E8727C6E8D7002620E7 /* SettingsView.swift in Sources */,
 				E4D0EA9F27C688FD001850EF /* ContentView.swift in Sources */,
 				E4D0EAB927C6A91A001850EF /* Question.swift in Sources */,
 				E4D0EA9D27C688FD001850EF /* PhraseCompApp.swift in Sources */,
-				E42A8E8527C6CF4A002620E7 /* SettingsView.swift in Sources */,
+				E4A4AEB527C6F150004B4C92 /* FullExcersise.swift in Sources */,
+				E42A8E8527C6CF4A002620E7 /* DropDown.swift in Sources */,
+				E4A4AEBB27C70DBF004B4C92 /* ResultView.swift in Sources */,
 				E4D0EAAB27C6891A001850EF /* PhraseView.swift in Sources */,
+				E4A4AEBD27C70F19004B4C92 /* ResultsViewModel.swift in Sources */,
 				E42A8E7F27C6C23C002620E7 /* FowardButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

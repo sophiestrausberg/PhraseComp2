@@ -18,7 +18,7 @@ struct FowardButton: View {
                 Text(text)
                     .frame(width: 320, height: 20, alignment: .center)
                     .padding()
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("ButtonTextColor"))
                     .overlay(
                         RoundedRectangle(cornerRadius: 15)
                             .stroke(Color("ButtonOutline"), lineWidth: 15)
