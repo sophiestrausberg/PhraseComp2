@@ -12,7 +12,6 @@ struct Question {
     let answers: [String]
     let correctAnswer: String
     
-    //correct answer string?
     static let allQuestions = [
         Question(text: "How is your day?", answers: ["Good", "Bad", "Okay", "Perfect"].shuffled(), correctAnswer: "Perfect"),
         Question(text: "Skating on thin...", answers: ["Ice", "Water", "Snow", "Pigs"].shuffled(), correctAnswer: "Ice"),

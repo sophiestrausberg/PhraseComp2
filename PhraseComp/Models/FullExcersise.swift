@@ -17,7 +17,5 @@ struct FullExcersise {
     
     mutating func advanceGameState() {
         currentQuestionIndex += 1
-        //WHY ISNT THE CURRENT QUESTION UPDATING
-//        currentQuestion = questions[currentQuestionIndex]
     }
 }
