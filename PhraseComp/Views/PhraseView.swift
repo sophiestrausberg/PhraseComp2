@@ -5,6 +5,8 @@
 //  Created by Sophie Strausberg on 2/23/22.
 //
 
+//when we have more than one type of excersie, we can have this be the blueprint for all multiple choice and pass in specific values.
+
 import SwiftUI
 
 struct PhraseView: View {
@@ -118,26 +120,6 @@ struct PhraseView: View {
         return .purple
 
     }
-}
-
-struct AnswerButton: View {
-    let text: String
-    let onClick: () -> Void
-    var body: some View {
-        
-        Button(action: {
-                onClick()
-            }) {
-                Text(text)
-                    .frame(width: 320, height: 50, alignment: .center)
-                    .padding()
-                    .foregroundColor(Color("ButtonTextColor"))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 15)
-                            .stroke(Color("ButtonOutline"), lineWidth: 15)
-                )
-            }
-        }
 }
 
 struct PhraseView_Previews: PreviewProvider {

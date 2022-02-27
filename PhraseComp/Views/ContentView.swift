@@ -9,14 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        PhraseView()
+        PhraseVoiceView()
+            .environmentObject(SpeechRecognizer())
             .preferredColorScheme(.dark)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        PhraseView()
+        PhraseVoiceView()
+            .environmentObject(SpeechRecognizer())
             .preferredColorScheme(.dark)
     }
 }

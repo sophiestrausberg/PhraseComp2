@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//in the future we can make the drop down move generic so it can be used in many scenarios.
+
 enum Game: String, CaseIterable, Identifiable, CustomStringConvertible {
     case multipleChoice
     case voiceRecognition
@@ -27,9 +29,10 @@ enum Game: String, CaseIterable, Identifiable, CustomStringConvertible {
 }
 
 struct DropDown: View {
+    @StateObject var selectedExcersise = SelectedExcersise()
     @State var expand = false
-    @State var selectedGame: Game? = nil
-    @State var buttonText = "How would you like to answer?"
+    @State public var selectedGame: Game = .multipleChoice
+    @State var buttonText = Game.multipleChoice.description
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
             HStack {
@@ -45,6 +48,10 @@ struct DropDown: View {
                     Button(gameType.description) {
                         buttonText = gameType.description
                         selectedGame = gameType
+                        selectedExcersise.excersiseType = gameType
+                        
+                        print("selected game: \(selectedGame)")
+                        print("selected excersise: \(selectedExcersise.excersiseType)")
                         self.expand.toggle()
                     }
                 }

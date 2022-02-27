@@ -11,7 +11,10 @@ import SwiftUI
 struct PhraseCompApp: App {
     var body: some Scene {
         WindowGroup {
-            SettingsView()
+            SettingsView(dropDown: DropDown())
+//            PhraseVoiceView()
+//                .environmentObject(SpeechRecognizer())
+//                .preferredColorScheme(.dark)
         }
     }
 }

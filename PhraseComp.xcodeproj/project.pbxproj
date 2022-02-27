@@ -10,6 +10,7 @@
 		E42A8E7F27C6C23C002620E7 /* FowardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A8E7E27C6C23C002620E7 /* FowardButton.swift */; };
 		E42A8E8527C6CF4A002620E7 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A8E8427C6CF4A002620E7 /* DropDown.swift */; };
 		E42A8E8727C6E8D7002620E7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A8E8627C6E8D7002620E7 /* SettingsView.swift */; };
+		E46F7EA627CC265C00A66A01 /* SelectedExcersise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F7EA527CC265C00A66A01 /* SelectedExcersise.swift */; };
 		E4A4AEB527C6F150004B4C92 /* FullExcersise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4AEB427C6F150004B4C92 /* FullExcersise.swift */; };
 		E4A4AEB927C6F41C004B4C92 /* PhraseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4AEB827C6F41C004B4C92 /* PhraseViewModel.swift */; };
 		E4A4AEBB27C70DBF004B4C92 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4AEBA27C70DBF004B4C92 /* ResultView.swift */; };
@@ -20,12 +21,18 @@
 		E4D0EAA427C68902001850EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D0EAA327C68902001850EF /* Preview Assets.xcassets */; };
 		E4D0EAAB27C6891A001850EF /* PhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D0EAAA27C6891A001850EF /* PhraseView.swift */; };
 		E4D0EAB927C6A91A001850EF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D0EAB827C6A91A001850EF /* Question.swift */; };
+		E4DC5C9C27C9B01E0096D970 /* PhraseVoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC5C9B27C9B01E0096D970 /* PhraseVoiceView.swift */; };
+		E4DC5C9E27C9B8330096D970 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC5C9D27C9B8330096D970 /* SpeechRecognizer.swift */; };
+		E4DC5CA027C9BBFE0096D970 /* SpeechButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC5C9F27C9BBFE0096D970 /* SpeechButton.swift */; };
+		E4EE24E127C9C7C500C74DBE /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EE24E027C9C7C500C74DBE /* AnswerButton.swift */; };
+		E4EE24E327C9D13500C74DBE /* AnswerPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EE24E227C9D13500C74DBE /* AnswerPopUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E42A8E7E27C6C23C002620E7 /* FowardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FowardButton.swift; sourceTree = "<group>"; };
 		E42A8E8427C6CF4A002620E7 /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		E42A8E8627C6E8D7002620E7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E46F7EA527CC265C00A66A01 /* SelectedExcersise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedExcersise.swift; sourceTree = "<group>"; };
 		E4A4AEB427C6F150004B4C92 /* FullExcersise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullExcersise.swift; sourceTree = "<group>"; };
 		E4A4AEB827C6F41C004B4C92 /* PhraseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseViewModel.swift; sourceTree = "<group>"; };
 		E4A4AEBA27C70DBF004B4C92 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
@@ -37,6 +44,11 @@
 		E4D0EAA327C68902001850EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E4D0EAAA27C6891A001850EF /* PhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseView.swift; sourceTree = "<group>"; };
 		E4D0EAB827C6A91A001850EF /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		E4DC5C9B27C9B01E0096D970 /* PhraseVoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseVoiceView.swift; sourceTree = "<group>"; };
+		E4DC5C9D27C9B8330096D970 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		E4DC5C9F27C9BBFE0096D970 /* SpeechButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechButton.swift; sourceTree = "<group>"; };
+		E4EE24E027C9C7C500C74DBE /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
+		E4EE24E227C9D13500C74DBE /* AnswerPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerPopUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,7 @@
 			children = (
 				E4D0EAB827C6A91A001850EF /* Question.swift */,
 				E4A4AEB427C6F150004B4C92 /* FullExcersise.swift */,
+				E4DC5C9D27C9B8330096D970 /* SpeechRecognizer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -68,6 +81,10 @@
 				E42A8E8427C6CF4A002620E7 /* DropDown.swift */,
 				E42A8E8627C6E8D7002620E7 /* SettingsView.swift */,
 				E4A4AEBA27C70DBF004B4C92 /* ResultView.swift */,
+				E4DC5C9B27C9B01E0096D970 /* PhraseVoiceView.swift */,
+				E4DC5C9F27C9BBFE0096D970 /* SpeechButton.swift */,
+				E4EE24E027C9C7C500C74DBE /* AnswerButton.swift */,
+				E4EE24E227C9D13500C74DBE /* AnswerPopUp.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -77,6 +94,7 @@
 			children = (
 				E4A4AEB827C6F41C004B4C92 /* PhraseViewModel.swift */,
 				E4A4AEBC27C70F19004B4C92 /* ResultsViewModel.swift */,
+				E46F7EA527CC265C00A66A01 /* SelectedExcersise.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,15 +206,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4EE24E327C9D13500C74DBE /* AnswerPopUp.swift in Sources */,
 				E4A4AEB927C6F41C004B4C92 /* PhraseViewModel.swift in Sources */,
 				E42A8E8727C6E8D7002620E7 /* SettingsView.swift in Sources */,
 				E4D0EA9F27C688FD001850EF /* ContentView.swift in Sources */,
 				E4D0EAB927C6A91A001850EF /* Question.swift in Sources */,
 				E4D0EA9D27C688FD001850EF /* PhraseCompApp.swift in Sources */,
+				E4EE24E127C9C7C500C74DBE /* AnswerButton.swift in Sources */,
+				E4DC5CA027C9BBFE0096D970 /* SpeechButton.swift in Sources */,
 				E4A4AEB527C6F150004B4C92 /* FullExcersise.swift in Sources */,
 				E42A8E8527C6CF4A002620E7 /* DropDown.swift in Sources */,
 				E4A4AEBB27C70DBF004B4C92 /* ResultView.swift in Sources */,
+				E46F7EA627CC265C00A66A01 /* SelectedExcersise.swift in Sources */,
+				E4DC5C9C27C9B01E0096D970 /* PhraseVoiceView.swift in Sources */,
 				E4D0EAAB27C6891A001850EF /* PhraseView.swift in Sources */,
+				E4DC5C9E27C9B8330096D970 /* SpeechRecognizer.swift in Sources */,
 				E4A4AEBD27C70F19004B4C92 /* ResultsViewModel.swift in Sources */,
 				E42A8E7F27C6C23C002620E7 /* FowardButton.swift in Sources */,
 			);
@@ -332,6 +356,8 @@
 				DEVELOPMENT_TEAM = ZXR246346D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to recognize your answers. Audio will be discarded after questions have been answered.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can answer questions using voice typing.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -361,6 +387,8 @@
 				DEVELOPMENT_TEAM = ZXR246346D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to recognize your answers. Audio will be discarded after questions have been answered.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can answer questions using voice typing.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
