@@ -10,7 +10,7 @@ import SwiftUI
 //later we can use an environment variable to pass in a whole SelectedExcersise including game type, excersise type, ect.
 //drop down can change game type
 
-//take out drop down, use environment variable to pass in current game type???
+//take out drop down (put into its own view), use environment variable to pass in current game type???
 
 struct SettingsView: View {
     //drop down isn't updating. drop down view model?
@@ -57,7 +57,6 @@ struct SettingsView: View {
                             }
                         }
                     }
-                    
                 }
                 .padding(20)
                 .background(expand ? Color("ButtonOutline").opacity(0.5) : Color("ButtonOutline"))

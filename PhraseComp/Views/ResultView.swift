@@ -31,7 +31,7 @@ struct ResultView: View {
         }
     
     private var phraseNavigationLink : some View {
-        NavigationLink(destination: PhraseView(), isActive: $isGoClicked, label: {
+        NavigationLink(destination: SettingsView(dropDown: DropDown()), isActive: $isGoClicked, label: {
             EmptyView()
         })
     }
