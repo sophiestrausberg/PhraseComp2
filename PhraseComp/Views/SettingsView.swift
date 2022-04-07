@@ -12,6 +12,43 @@ import SwiftUI
 
 //take out drop down (put into its own view), use environment variable to pass in current game type???
 
+extension Image {
+
+    func data(url: String) -> Self? {
+        if let safeURL = URL(string: url) {
+            if let data = try? Data(contentsOf: safeURL) {
+
+                return Image(uiImage: UIImage(data: data)!)
+                    .resizable()
+
+            }
+
+            return self
+                .resizable()
+
+            }
+        
+            return nil
+        }
+}
+
+struct UnsplashResponse: Codable {
+    let total: Int
+    let total_pages: Int
+    let results: [Result]
+}
+
+struct Result: Codable {
+    let id: String
+    let urls: URLS
+}
+
+struct URLS: Codable {
+    let raw: String
+}
+
+var picResults: [Result] = []
+
 struct SettingsView: View {
     //drop down isn't updating. drop down view model?
     @State var dropDown : DropDown
@@ -23,17 +60,65 @@ struct SettingsView: View {
     @State public var selectedGame: Game = .multipleChoice
     @State var buttonText = Game.multipleChoice.description
     
+    
+    @State var done = false
+    weak var uiimageview : UIImageView!
+    
+    let urlString = "https://api.unsplash.com/search/photos?page=1&query=office&client_id=gjPdR0RCeXlLUj2ZgtfeYst8a79uHaJH5eKjYhAhaco"
+    
+    //NOT WORKING PROPERLY
+    func fetchPhotos() {
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, _, error in
+            guard error == nil else {
+                return
+            }
+            
+            if let safeData = data {
+                do {
+                    let jsonResult = try JSONDecoder().decode(UnsplashResponse.self, from: safeData)
+                    
+                    DispatchQueue.main.async {
+                        picResults = jsonResult.results
+                    }
+                    
+                    print(picResults.count)
+                } catch {
+                    print(error)
+                }
+            }
+        }
+        
+        task.resume()
+    }
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 30) {
                 Text("Settings").bold().multilineTextAlignment(.center).font(.system(size: 30))
+                
                 Spacer()
                 HStack {
-                    Text("Pictures").font(.system(size: 15))
+                    
+                    if done {
+                        Image(systemName: "person.fill")
+                            .data(url: picResults[0].urls.raw)
+                    }
+                    
+                    
+                    Text("Pictures" ).font(.system(size: 15))
                     Toggle(isOn: $picturesOn) {
-                        
+                       
                     }.labelsHidden()
                     .tint(picturesOn ? Color("ButtonOutline") : .gray)
+                    .onChange(of: picturesOn) { _ in
+                        fetchPhotos()
+                        print("done!")
+                        done.toggle()
+                    }
                 }
                 
                 //DROP DOWN
