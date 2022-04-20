@@ -10,14 +10,24 @@
 		E42A8E7F27C6C23C002620E7 /* FowardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A8E7E27C6C23C002620E7 /* FowardButton.swift */; };
 		E42A8E8527C6CF4A002620E7 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A8E8427C6CF4A002620E7 /* DropDown.swift */; };
 		E42A8E8727C6E8D7002620E7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A8E8627C6E8D7002620E7 /* SettingsView.swift */; };
+		E4517CF927FF89F100C4EC89 /* GetUnsplashPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4517CF827FF89F100C4EC89 /* GetUnsplashPhoto.swift */; };
+		E4517CFB27FF8A8300C4EC89 /* UnsplashResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4517CFA27FF8A8300C4EC89 /* UnsplashResponse.swift */; };
+		E4517CFE27FF98F900C4EC89 /* PhotoSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4517CFD27FF98F900C4EC89 /* PhotoSettings.swift */; };
+		E4517D01280127AA00C4EC89 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4517D00280127AA00C4EC89 /* ExerciseView.swift */; };
 		E46F7EA627CC265C00A66A01 /* SelectedExcersise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F7EA527CC265C00A66A01 /* SelectedExcersise.swift */; };
 		E46F7EA927CEA56B00A66A01 /* PhraseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F7EA827CEA56B00A66A01 /* PhraseTextView.swift */; };
+		E49A014D280F60AE00B53EA2 /* ResultsScenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A014C280F60AE00B53EA2 /* ResultsScenView.swift */; };
+		E49A014F280F615100B53EA2 /* ResultsScenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A014E280F615100B53EA2 /* ResultsScenViewModel.swift */; };
+		E4A251AD280F4E0400E2DA18 /* ScenarioExcercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A251AC280F4E0400E2DA18 /* ScenarioExcercise.swift */; };
+		E4A251AF280F4E0900E2DA18 /* FullScenExcersise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A251AE280F4E0900E2DA18 /* FullScenExcersise.swift */; };
+		E4A251B1280F4E1400E2DA18 /* ScenQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A251B0280F4E1400E2DA18 /* ScenQuestion.swift */; };
+		E4A251B3280F510000E2DA18 /* ScenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A251B2280F510000E2DA18 /* ScenViewModel.swift */; };
 		E4A4AEB527C6F150004B4C92 /* FullExcersise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4AEB427C6F150004B4C92 /* FullExcersise.swift */; };
 		E4A4AEB927C6F41C004B4C92 /* PhraseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4AEB827C6F41C004B4C92 /* PhraseViewModel.swift */; };
 		E4A4AEBB27C70DBF004B4C92 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4AEBA27C70DBF004B4C92 /* ResultView.swift */; };
 		E4A4AEBD27C70F19004B4C92 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4AEBC27C70F19004B4C92 /* ResultsViewModel.swift */; };
+		E4B94E9E2805C9AC00E6E125 /* vfdvfd.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B94E9D2805C9AC00E6E125 /* vfdvfd.swift */; };
 		E4D0EA9D27C688FD001850EF /* PhraseCompApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D0EA9C27C688FD001850EF /* PhraseCompApp.swift */; };
-		E4D0EA9F27C688FD001850EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D0EA9E27C688FD001850EF /* ContentView.swift */; };
 		E4D0EAA127C68902001850EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D0EAA027C68902001850EF /* Assets.xcassets */; };
 		E4D0EAA427C68902001850EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D0EAA327C68902001850EF /* Preview Assets.xcassets */; };
 		E4D0EAAB27C6891A001850EF /* PhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D0EAAA27C6891A001850EF /* PhraseView.swift */; };
@@ -27,21 +37,33 @@
 		E4DC5CA027C9BBFE0096D970 /* SpeechButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC5C9F27C9BBFE0096D970 /* SpeechButton.swift */; };
 		E4EE24E127C9C7C500C74DBE /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EE24E027C9C7C500C74DBE /* AnswerButton.swift */; };
 		E4EE24E327C9D13500C74DBE /* AnswerPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EE24E227C9D13500C74DBE /* AnswerPopUp.swift */; };
+		E4F780AE28023899001BB327 /* SentencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F780AD28023899001BB327 /* SentencesView.swift */; };
+		E4F780B22803972B001BB327 /* WrappingHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F780B12803972B001BB327 /* WrappingHStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E42A8E7E27C6C23C002620E7 /* FowardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FowardButton.swift; sourceTree = "<group>"; };
 		E42A8E8427C6CF4A002620E7 /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		E42A8E8627C6E8D7002620E7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E4517CF827FF89F100C4EC89 /* GetUnsplashPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUnsplashPhoto.swift; sourceTree = "<group>"; };
+		E4517CFA27FF8A8300C4EC89 /* UnsplashResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashResponse.swift; sourceTree = "<group>"; };
+		E4517CFD27FF98F900C4EC89 /* PhotoSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSettings.swift; sourceTree = "<group>"; };
+		E4517D00280127AA00C4EC89 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		E46F7EA527CC265C00A66A01 /* SelectedExcersise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedExcersise.swift; sourceTree = "<group>"; };
 		E46F7EA827CEA56B00A66A01 /* PhraseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseTextView.swift; sourceTree = "<group>"; };
+		E49A014C280F60AE00B53EA2 /* ResultsScenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsScenView.swift; sourceTree = "<group>"; };
+		E49A014E280F615100B53EA2 /* ResultsScenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsScenViewModel.swift; sourceTree = "<group>"; };
+		E4A251AC280F4E0400E2DA18 /* ScenarioExcercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScenarioExcercise.swift; sourceTree = "<group>"; };
+		E4A251AE280F4E0900E2DA18 /* FullScenExcersise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScenExcersise.swift; sourceTree = "<group>"; };
+		E4A251B0280F4E1400E2DA18 /* ScenQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScenQuestion.swift; sourceTree = "<group>"; };
+		E4A251B2280F510000E2DA18 /* ScenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenViewModel.swift; sourceTree = "<group>"; };
 		E4A4AEB427C6F150004B4C92 /* FullExcersise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullExcersise.swift; sourceTree = "<group>"; };
 		E4A4AEB827C6F41C004B4C92 /* PhraseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseViewModel.swift; sourceTree = "<group>"; };
 		E4A4AEBA27C70DBF004B4C92 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		E4A4AEBC27C70F19004B4C92 /* ResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
+		E4B94E9D2805C9AC00E6E125 /* vfdvfd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vfdvfd.swift; sourceTree = "<group>"; };
 		E4D0EA9927C688FD001850EF /* PhraseComp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhraseComp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D0EA9C27C688FD001850EF /* PhraseCompApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseCompApp.swift; sourceTree = "<group>"; };
-		E4D0EA9E27C688FD001850EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4D0EAA027C68902001850EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4D0EAA327C68902001850EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E4D0EAAA27C6891A001850EF /* PhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseView.swift; sourceTree = "<group>"; };
@@ -51,6 +73,8 @@
 		E4DC5C9F27C9BBFE0096D970 /* SpeechButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechButton.swift; sourceTree = "<group>"; };
 		E4EE24E027C9C7C500C74DBE /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
 		E4EE24E227C9D13500C74DBE /* AnswerPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerPopUp.swift; sourceTree = "<group>"; };
+		E4F780AD28023899001BB327 /* SentencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesView.swift; sourceTree = "<group>"; };
+		E4F780B12803972B001BB327 /* WrappingHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappingHStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +94,7 @@
 				E4D0EAB827C6A91A001850EF /* Question.swift */,
 				E4A4AEB427C6F150004B4C92 /* FullExcersise.swift */,
 				E4DC5C9D27C9B8330096D970 /* SpeechRecognizer.swift */,
+				E4517CFA27FF8A8300C4EC89 /* UnsplashResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -77,19 +102,83 @@
 		E42A8E7D27C6C1D2002620E7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E4D0EA9E27C688FD001850EF /* ContentView.swift */,
-				E4D0EAAA27C6891A001850EF /* PhraseView.swift */,
-				E42A8E7E27C6C23C002620E7 /* FowardButton.swift */,
-				E42A8E8427C6CF4A002620E7 /* DropDown.swift */,
+				E4A251AB280F4DF200E2DA18 /* Scenario */,
+				E4F780AC280230A7001BB327 /* Making Sentences */,
+				E4F780AB2802308C001BB327 /* PhraseCompletion */,
+				E4517CFF280126FA00C4EC89 /* Components */,
 				E42A8E8627C6E8D7002620E7 /* SettingsView.swift */,
-				E4A4AEBA27C70DBF004B4C92 /* ResultView.swift */,
-				E4DC5C9B27C9B01E0096D970 /* PhraseVoiceView.swift */,
-				E4DC5C9F27C9BBFE0096D970 /* SpeechButton.swift */,
-				E4EE24E027C9C7C500C74DBE /* AnswerButton.swift */,
-				E4EE24E227C9D13500C74DBE /* AnswerPopUp.swift */,
-				E46F7EA827CEA56B00A66A01 /* PhraseTextView.swift */,
+				E4517D00280127AA00C4EC89 /* ExerciseView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E4517CFC27FF979400C4EC89 /* Excersise Types */ = {
+			isa = PBXGroup;
+			children = (
+				E4D0EAAA27C6891A001850EF /* PhraseView.swift */,
+				E46F7EA827CEA56B00A66A01 /* PhraseTextView.swift */,
+				E4DC5C9B27C9B01E0096D970 /* PhraseVoiceView.swift */,
+			);
+			name = "Excersise Types";
+			path = "../New Group/Excersise Types";
+			sourceTree = "<group>";
+		};
+		E4517CFF280126FA00C4EC89 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E42A8E8427C6CF4A002620E7 /* DropDown.swift */,
+				E4DC5C9F27C9BBFE0096D970 /* SpeechButton.swift */,
+				E4EE24E227C9D13500C74DBE /* AnswerPopUp.swift */,
+				E4EE24E027C9C7C500C74DBE /* AnswerButton.swift */,
+				E42A8E7E27C6C23C002620E7 /* FowardButton.swift */,
+				E4F780B12803972B001BB327 /* WrappingHStack.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E49A014B280F607100B53EA2 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				E4A4AEBA27C70DBF004B4C92 /* ResultView.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		E49A0150280F6B6500B53EA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E49A014C280F60AE00B53EA2 /* ResultsScenView.swift */,
+				E4A251AC280F4E0400E2DA18 /* ScenarioExcercise.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E49A0151280F6B9000B53EA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4A251B0280F4E1400E2DA18 /* ScenQuestion.swift */,
+				E4A251AE280F4E0900E2DA18 /* FullScenExcersise.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E49A0152280F6BA600B53EA2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E49A014E280F615100B53EA2 /* ResultsScenViewModel.swift */,
+				E4A251B2280F510000E2DA18 /* ScenViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E4A251AB280F4DF200E2DA18 /* Scenario */ = {
+			isa = PBXGroup;
+			children = (
+				E49A0152280F6BA600B53EA2 /* ViewModels */,
+				E49A0151280F6B9000B53EA2 /* Models */,
+				E49A0150280F6B6500B53EA2 /* Views */,
+			);
+			path = Scenario;
 			sourceTree = "<group>";
 		};
 		E4A4AEB627C6F3C0004B4C92 /* ViewModel */ = {
@@ -98,6 +187,8 @@
 				E4A4AEB827C6F41C004B4C92 /* PhraseViewModel.swift */,
 				E4A4AEBC27C70F19004B4C92 /* ResultsViewModel.swift */,
 				E46F7EA527CC265C00A66A01 /* SelectedExcersise.swift */,
+				E4517CF827FF89F100C4EC89 /* GetUnsplashPhoto.swift */,
+				E4517CFD27FF98F900C4EC89 /* PhotoSettings.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -137,6 +228,24 @@
 				E4D0EAA327C68902001850EF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4F780AB2802308C001BB327 /* PhraseCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				E49A014B280F607100B53EA2 /* Results */,
+				E4517CFC27FF979400C4EC89 /* Excersise Types */,
+			);
+			path = PhraseCompletion;
+			sourceTree = "<group>";
+		};
+		E4F780AC280230A7001BB327 /* Making Sentences */ = {
+			isa = PBXGroup;
+			children = (
+				E4F780AD28023899001BB327 /* SentencesView.swift */,
+				E4B94E9D2805C9AC00E6E125 /* vfdvfd.swift */,
+			);
+			path = "Making Sentences";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,24 +318,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A251B1280F4E1400E2DA18 /* ScenQuestion.swift in Sources */,
+				E4517CF927FF89F100C4EC89 /* GetUnsplashPhoto.swift in Sources */,
 				E4EE24E327C9D13500C74DBE /* AnswerPopUp.swift in Sources */,
 				E4A4AEB927C6F41C004B4C92 /* PhraseViewModel.swift in Sources */,
 				E42A8E8727C6E8D7002620E7 /* SettingsView.swift in Sources */,
-				E4D0EA9F27C688FD001850EF /* ContentView.swift in Sources */,
 				E46F7EA927CEA56B00A66A01 /* PhraseTextView.swift in Sources */,
 				E4D0EAB927C6A91A001850EF /* Question.swift in Sources */,
+				E4A251B3280F510000E2DA18 /* ScenViewModel.swift in Sources */,
+				E4A251AD280F4E0400E2DA18 /* ScenarioExcercise.swift in Sources */,
+				E4F780B22803972B001BB327 /* WrappingHStack.swift in Sources */,
 				E4D0EA9D27C688FD001850EF /* PhraseCompApp.swift in Sources */,
 				E4EE24E127C9C7C500C74DBE /* AnswerButton.swift in Sources */,
 				E4DC5CA027C9BBFE0096D970 /* SpeechButton.swift in Sources */,
 				E4A4AEB527C6F150004B4C92 /* FullExcersise.swift in Sources */,
 				E42A8E8527C6CF4A002620E7 /* DropDown.swift in Sources */,
 				E4A4AEBB27C70DBF004B4C92 /* ResultView.swift in Sources */,
+				E4517D01280127AA00C4EC89 /* ExerciseView.swift in Sources */,
 				E46F7EA627CC265C00A66A01 /* SelectedExcersise.swift in Sources */,
+				E49A014D280F60AE00B53EA2 /* ResultsScenView.swift in Sources */,
+				E4517CFB27FF8A8300C4EC89 /* UnsplashResponse.swift in Sources */,
 				E4DC5C9C27C9B01E0096D970 /* PhraseVoiceView.swift in Sources */,
 				E4D0EAAB27C6891A001850EF /* PhraseView.swift in Sources */,
+				E4F780AE28023899001BB327 /* SentencesView.swift in Sources */,
+				E4517CFE27FF98F900C4EC89 /* PhotoSettings.swift in Sources */,
+				E49A014F280F615100B53EA2 /* ResultsScenViewModel.swift in Sources */,
 				E4DC5C9E27C9B8330096D970 /* SpeechRecognizer.swift in Sources */,
 				E4A4AEBD27C70F19004B4C92 /* ResultsViewModel.swift in Sources */,
+				E4A251AF280F4E0900E2DA18 /* FullScenExcersise.swift in Sources */,
 				E42A8E7F27C6C23C002620E7 /* FowardButton.swift in Sources */,
+				E4B94E9E2805C9AC00E6E125 /* vfdvfd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

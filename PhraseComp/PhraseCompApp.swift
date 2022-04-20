@@ -11,7 +11,9 @@ import SwiftUI
 struct PhraseCompApp: App {
     var body: some Scene {
         WindowGroup {
-            SettingsView(dropDown: DropDown())
+//            ScenarioExercise()
+//            SentencesView()
+            ExerciseView()
 //            PhraseVoiceView()
 //                .environmentObject(SpeechRecognizer())
 //                .preferredColorScheme(.dark)

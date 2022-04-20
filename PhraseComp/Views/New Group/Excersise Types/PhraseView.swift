@@ -19,12 +19,29 @@ struct PhraseView: View {
     @State var isCorrect = (correct: 0, incorrect: 0)
     @State var gameOver = false
     
+    @ObservedObject var getUnsplashPhoto = GetUnsplashPhoto()
+    
     var body: some View {
         VStack {
             
             ProgressView(value: progress).padding(.horizontal, 100.0)
             Spacer()
             Text(PhraseVM.questionText).bold().multilineTextAlignment(.center).font(.system(size: 30))
+                .onAppear {
+                    getUnsplashPhoto.updateData(key: PhraseVM.questionCorrectAnswer)
+                }
+            if PhotoSettings.pictures {
+                
+                AsyncImage(url: URL(string: getUnsplashPhoto.stringURL)) { retunedImage in
+                    retunedImage
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 100)
+                } placeholder: {
+//                    Text("URL: \(getUnsplashPhoto.stringURL)")
+                    ProgressView()
+                }
+            }
             Spacer()
                 
             VStack {
@@ -69,6 +86,8 @@ struct PhraseView: View {
                     
                     print(PhraseVM.questionAnswersIndices)
                     PhraseVM.fullExcersise.advanceGameState()
+                    
+                    getUnsplashPhoto.updateData(key: PhraseVM.questionCorrectAnswer)
                     //WHY ISNT IT CALLING THE UPDATES VERSION IN THE FOR EACH LOOP
                     print(PhraseVM.questionAnswersIndices)
                         
@@ -120,6 +139,8 @@ struct PhraseView: View {
         return .purple
 
     }
+    
+    
 }
 
 struct PhraseView_Previews: PreviewProvider {
